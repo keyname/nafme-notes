@@ -1,0 +1,33 @@
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+
+  :root, table {
+    color-scheme: light only;
+    supported-color-schemes: light only;
+  }
+  @media (prefers-color-scheme:dark){
+    :root, table {
+      color-scheme: light only;
+      supported-color-schemes: light only;
+    }
+  }
+  @media (forced-colors:active) and (prefers-color-scheme:dark){
+    :root, table {
+      color-scheme: light only;
+      supported-color-schemes: light only;
+    }
+  }
+
+  /* Headlines: Black */
+  table tr td h1, table tr td h2, table tr td h3,
+  table tr td h1 span, table tr td h2 span, table tr td h3 span{
+    font-family: 'Montserrat', 'Arial Black', Arial, sans-serif !important;
+    font-weight: 900 !important;
+  }
+
+  /* Paragraphs: Medium */
+  table tr td, table tr td p, table tr td li,
+  table tr td span, table tr td p span, table tr td li span{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+    font-weight: 500 !important;
+  }
